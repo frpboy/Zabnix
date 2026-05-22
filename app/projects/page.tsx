@@ -15,51 +15,51 @@ interface ProjectItem {
   slug: string;
   title: string;
   client: string;
-  industry: "Fintech" | "MedTech" | "Logistics";
+  industry: "Finance" | "Healthcare" | "Logistics";
   shortDescription: string;
   results: { label: string; value: string }[];
   technologies: string[];
 }
 
 export default function ProjectsPage() {
-  const [activeTab, setActiveTab] = useState<"All" | "Fintech" | "MedTech" | "Logistics">("All");
+  const [activeTab, setActiveTab] = useState<"All" | "Finance" | "Healthcare" | "Logistics">("All");
 
   const projects: ProjectItem[] = [
     {
-      slug: "sahakar-institutional-core",
-      title: "Sahakar Institutional Core",
-      client: "Sahakar Group",
-      industry: "Fintech",
-      shortDescription: "Architected a custom high-performance secure portal system handling distributed financial accounting ledgers and client data grids.",
+      slug: "sahakar-cooperative-ledger",
+      title: "Cooperative Credit Ledger Migration",
+      client: "Sahakar Credit Union",
+      industry: "Finance",
+      shortDescription: "Architected a secure, compliant transition system to migrate legacy member account databases into an audited, modern distributed database ledger.",
       results: [
-        { label: "Uptime SLA", value: "99.99%" },
-        { label: "Data Latency", value: "<15ms" },
+        { label: "Migration Uptime", value: "100%" },
+        { label: "Audit Accuracy", value: "100%" },
       ],
-      technologies: ["Next.js", "GraphQL", "PostgreSQL", "Redis"],
+      technologies: ["Next.js", "PostgreSQL", "Redis", "Tailwind CSS"],
     },
     {
-      slug: "medtech-stream-parser",
-      title: "MedTech Stream Parser",
-      client: "Axiom Healthcare",
-      industry: "MedTech",
-      shortDescription: "Engineered a lightning-fast clinical stream parser that ingests real-time patient telemetry feeds and validates metrics under HIPAA privacy limits.",
+      slug: "healthcare-operations-erp",
+      title: "Healthcare Patient Care & Billing ERP",
+      client: "Axiom Healthcare Networks",
+      industry: "Healthcare",
+      shortDescription: "Built a custom billing coordination and departmental resource manager to streamline patient registration, scheduling, and pharmacy stock balances.",
       results: [
-        { label: "Stream Speed", value: "90k req/s" },
-        { label: "Parser Delay", value: "8ms" },
+        { label: "Dispatch Sync Speed", value: "< 2s" },
+        { label: "Operational Speedup", value: "45%" },
       ],
-      technologies: ["Node.js", "WebSockets", "ClickHouse", "Docker"],
+      technologies: ["Node.js", "Express", "PostgreSQL", "Docker"],
     },
     {
-      slug: "orbit-global-logistics",
-      title: "Orbit Global Logistics",
-      client: "Orbit Supply Chain",
+      slug: "supply-chain-optimizer",
+      title: "Cooperative Supply Chain Optimizer",
+      client: "Sahakar Logistics Division",
       industry: "Logistics",
-      shortDescription: "Rebuilt the tracking management matrix tool that organizes delivery fleets, schedules dispatches, and reports telemetry analytics.",
+      shortDescription: "Rebuilt the warehouse dispatch and route optimization panel coordinating delivery fleets across 150+ regional retail and distribution nodes.",
       results: [
-        { label: "Daily Loads", value: "2.4M items" },
-        { label: "Load Drop", value: "35%" },
+        { label: "Routing Efficiency", value: "+28%" },
+        { label: "Active Fleets", value: "120+" },
       ],
-      technologies: ["React", "NestJS", "Tailwind CSS", "Prisma"],
+      technologies: ["React", "NestJS", "Prisma", "PostgreSQL"],
     },
   ];
 
@@ -67,7 +67,7 @@ export default function ProjectsPage() {
     ? projects
     : projects.filter(p => p.industry === activeTab);
 
-  const tabs: ("All" | "Fintech" | "MedTech" | "Logistics")[] = ["All", "Fintech", "MedTech", "Logistics"];
+  const tabs: ("All" | "Finance" | "Healthcare" | "Logistics")[] = ["All", "Finance", "Healthcare", "Logistics"];
 
   return (
     <>
@@ -83,7 +83,7 @@ export default function ProjectsPage() {
                 Proven Implementations
               </h1>
               <p className="text-zinc-400 mt-6 leading-relaxed text-base md:text-lg">
-                Explore our portfolio of scalable web architectures, streaming data parsers, and custom internal management ERP systems.
+                Explore our portfolio of scalable web architectures, database migrations, and custom operations management ERP systems built for real-world reliability.
               </p>
             </div>
           </Container>

@@ -10,18 +10,18 @@ export default function CareersPage() {
   const steps = [
     {
       icon: <Send className="w-5 h-5 text-cyan-400" />,
-      title: "1. Signal Transmission",
+      title: "1. Submit Application",
       text: "Submit your application with your resume, portfolio link, and a brief description of your technical contributions.",
     },
     {
       icon: <FileText className="w-5 h-5 text-cyan-400" />,
       title: "2. Technical Review",
-      text: "Our engineering leads review your portfolio, checking codebase layouts, optimization rules, and aesthetic sensibilities.",
+      text: "Our engineering leads review your profile, check code structures, project history, and practical design capabilities.",
     },
     {
       icon: <CalendarRange className="w-5 h-5 text-cyan-400" />,
-      title: "3. Project Brief Interview",
-      text: "A direct discussion walking through your projects, explaining how you approach scaling, performance, and complexity.",
+      title: "3. Technical Interview",
+      text: "A direct discussion walking through your projects, explaining how you approach databases, reliability, and operations.",
     },
   ];
 
@@ -36,10 +36,10 @@ export default function CareersPage() {
             <div className="max-w-3xl py-12">
               <span className="text-xs uppercase tracking-widest font-semibold text-cyan-400">Careers at Zabnix</span>
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mt-4">
-                Build Systems That Define Scale
+                Build Real-World Operational Systems
               </h1>
               <p className="text-zinc-400 mt-6 leading-relaxed text-base md:text-lg">
-                Join an elite engineering studio focused on building low-latency software products, enterprise dashboards, and state-of-the-art interactive user experiences.
+                Join our engineering team focused on building stable software systems, enterprise dashboards, and reliable operations platforms.
               </p>
             </div>
           </Container>

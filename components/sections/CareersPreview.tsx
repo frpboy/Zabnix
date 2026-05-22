@@ -32,12 +32,12 @@ export default function CareersPreview() {
       locationType: "Remote",
       location: "Bangalore, India",
       experienceLevel: "5+ years",
-      overview: "We are seeking a senior backend/systems engineer to build low-latency serverless routes, integrate database sharding models, and oversee microservices architectures.",
+      overview: "We are seeking a senior backend/systems engineer to build high-availability service endpoints, implement database sharding strategies, and manage core microservices architecture.",
       requirements: [
         "Deep familiarity with Node.js, TypeScript, and Go",
         "Expertise in SQL architectures (PostgreSQL, ClickHouse)",
-        "Experience configuring AWS, Docker, and edge networks",
-        "Ability to build high-performance data interfaces",
+        "Experience configuring AWS, Docker, and CI/CD pipelines",
+        "Ability to build reliable, high-throughput database interfaces",
       ],
       applicationEmail: "careers@zabnix.com",
     },
@@ -49,12 +49,12 @@ export default function CareersPreview() {
       locationType: "Hybrid",
       location: "Bangalore, India",
       experienceLevel: "3+ years",
-      overview: "Join our design squad to craft futuristic web interfaces, standardizing corporate color maps, typography scales, and CSS micro-animations.",
+      overview: "Join our design squad to craft highly functional web interfaces, standardizing design systems, corporate colors, and dashboard layouts.",
       requirements: [
-        "Strong portfolio of modern minimalist web applications",
-        "Expertise in Figma, vector animations, and design token structures",
-        "Comfortable pairing layouts with Framer Motion or vanilla CSS",
-        "Obsessive eye for typography, alignment, and spacing rules",
+        "Strong portfolio of clean, responsive web applications",
+        "Expertise in Figma, modern design tools, and component specifications",
+        "Comfortable pairing designs with Framer Motion or clean CSS",
+        "Attention to detail in typography, spacing rules, and layout consistency",
       ],
       applicationEmail: "careers@zabnix.com",
     },
@@ -97,7 +97,7 @@ export default function CareersPreview() {
             Active Job Openings
           </h2>
           <p className="text-zinc-400 mt-6 leading-relaxed">
-            We are always looking for high-caliber talents who are passionate about micro-optimization, sleek designs, and building robust web infrastructures.
+            We are always looking for skilled engineers and designers who are passionate about clean code, robust software architectures, and reliable operations systems.
           </p>
         </div>
 
@@ -188,4 +188,22 @@ export default function CareersPreview() {
                             </Button>
                             <Button
                               variant="glow"
-           
+                              href={`mailto:${job.applicationEmail}?subject=Application for ${job.title}`}
+                              className="py-2 px-5 text-xs uppercase tracking-wider"
+                            >
+                              Apply Now
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            );
+          })}
+        </div>
+      </Container>
+    </Section>
+  );
+}

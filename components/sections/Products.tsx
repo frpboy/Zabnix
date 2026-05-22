@@ -18,24 +18,24 @@ export default function Products() {
   const products: ProductItem[] = [
     {
       title: "Zabnix Core",
-      type: "SaaS Platform",
+      type: "Operational Suite",
       status: "Production",
-      shortDescription: "Our primary dashboard offering real-time system performance telemetry, distributed logs ingestion, and automated alert rules.",
-      features: ["Sub-millisecond data pipes", "Custom charting interfaces", "Dynamic alert triggers", "API integrations keyways"],
+      shortDescription: "Our central integration engine providing unified authentication, secure workspace boundaries, and key branch database synching.",
+      features: ["Multi-office database sync", "Role-based permission matrices", "Workflow automation engine", "External API integrations"],
     },
     {
       title: "Kronos ERP",
-      type: "ERP System",
-      status: "WIP",
-      shortDescription: "Bespoke operations resource planning architecture designed to handle heavy manufacturing workflows and logistics databases.",
-      features: ["Automated inventory ledgering", "Vendor dispatch pipelines", "Multi-office permission matrix", "Audited ledger exports"],
+      type: "Supply & Logistics",
+      status: "Production",
+      shortDescription: "Bespoke operations resource planning architecture designed specifically for heavy cooperative logistics, supply chains, and warehousing inventories.",
+      features: ["Inventory ledgering & sync", "Vendor dispatch pipelines", "Audit-ready ledgers", "Multi-warehouse management"],
     },
     {
       title: "Helios Analytics",
-      type: "Edge Telemetry",
-      status: "Experimental",
-      shortDescription: "A stream analytics engine that parses logs directly at Edge CDN nodes to generate fast geographical analytics reports.",
-      features: ["Edge network processing", "WebAssembly parsing cores", "Geographical mapping data", "Zero-cold-start hooks"],
+      type: "Business Intelligence",
+      status: "Internal",
+      shortDescription: "An operational monitoring panel that aggregates fleet telemetry, financial flows, and cooperative metrics into unified dashboards.",
+      features: ["Automated reporting engine", "Fleet tracking integration", "Interactive metrics panel", "Scheduled data exports"],
     },
   ];
 
@@ -62,15 +62,15 @@ export default function Products() {
               Our Products
             </span>
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mt-4">
-              In-House SaaS Solutions
+              Operational Suites & Frameworks
             </h2>
             <p className="text-zinc-400 mt-6 leading-relaxed">
-              We incubate and develop proprietary technologies that push the boundaries of enterprise software performance, logging, and metrics.
+              We design and deploy proprietary software components and ERP extensions built specifically for high-reliability enterprise operations.
             </p>
           </div>
           <div className="mt-6 md:mt-0">
-            <Button variant="secondary" href="#contact">
-              Inquire About Custom Licensing
+            <Button variant="secondary" href="/contact">
+              Request Technical Overview
             </Button>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function Products() {
 
                 {/* Features List */}
                 <div className="border-t border-white/5 pt-6 mb-8">
-                  <h4 className="text-[10px] uppercase font-bold text-cyan-400 tracking-wider mb-4">Featured Utilities</h4>
+                  <h4 className="text-[10px] uppercase font-bold text-cyan-400 tracking-wider mb-4">Core Capabilities</h4>
                   <ul className="space-y-2">
                     {product.features.map(f => (
                       <li key={f} className="text-xs text-zinc-400 flex items-center space-x-2">
@@ -120,8 +120,8 @@ export default function Products() {
                 </div>
               </div>
 
-              <Button variant="glow" className="w-full text-xs py-2.5 uppercase tracking-wider">
-                Request Pilot Access
+              <Button variant="glow" href="/contact" className="w-full text-xs py-2.5 uppercase tracking-wider">
+                Request Deployment Details
               </Button>
             </motion.div>
           ))}

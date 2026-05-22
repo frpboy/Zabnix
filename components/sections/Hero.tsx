@@ -29,7 +29,7 @@ export default function Hero() {
         >
           <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
           <span className="text-xs uppercase tracking-widest font-semibold text-cyan-400">
-            Enterprise Innovation Engine
+            Backed by Sahakar Group
           </span>
         </motion.div>
 
@@ -40,7 +40,7 @@ export default function Hero() {
           transition={{ duration: 1.0, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-5xl md:text-8xl font-bold tracking-tighter leading-[0.9] text-white max-w-4xl"
         >
-          We Build the <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-200 to-cyan-400">Future</span> of Enterprise Systems
+          Building Operational <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-200 to-cyan-400">Software That Scales</span>
         </motion.h1>
 
         {/* Supporting copy */}
@@ -50,7 +50,7 @@ export default function Hero() {
           transition={{ duration: 1.0, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
           className="text-lg md:text-xl text-zinc-400 max-w-2xl mt-8 leading-relaxed font-light"
         >
-          Zabnix designs, architects, and deploys high-performance SaaS environments, bespoke financial portals, and lightning-fast custom web platforms.
+          We build practical, reliable digital infrastructure for businesses that need operational stability over hype. Backed by institutional resources, we deliver systems engineered for real-world execution.
         </motion.p>
 
         {/* Buttons */}
@@ -60,24 +60,24 @@ export default function Hero() {
           transition={{ duration: 1.0, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12 w-full sm:w-auto"
         >
-          <Button variant="primary" href="#contact" className="w-full sm:w-auto">
+          <Button variant="primary" href="/contact" className="w-full sm:w-auto">
             Get Started
           </Button>
-          <Button variant="glow" href="#services" className="w-full sm:w-auto">
+          <Button variant="glow" href="/services" className="w-full sm:w-auto">
             Explore Capabilities
           </Button>
         </motion.div>
       </Container>
 
-      {/* Floating details / coordinates layout for futuristic tech styling */}
+      {/* Floating details for authentic enterprise engineering presence */}
       <div className="absolute bottom-8 left-8 hidden lg:block text-left font-mono text-[10px] text-zinc-600 tracking-wider">
-        <p>SYS.LOC: //ZABNIX/MAIN_STAGE</p>
-        <p>SYS.REF: BACKED_BY_SAHAKAR</p>
+        <p>ZABNIX ENGINEERING GROUP</p>
+        <p>SUPPORTED BY SAHAKAR INSTITUTIONAL DIVISION</p>
       </div>
       
       <div className="absolute bottom-8 right-8 hidden lg:block text-right font-mono text-[10px] text-zinc-600 tracking-wider">
-        <p>PORT: 443 // SSL_ENABLED</p>
-        <p>V_CORE: 1.0.4</p>
+        <p>OPERATIONAL STABILITY // SECURED</p>
+        <p>ESTD. 2026</p>
       </div>
     </div>
   );

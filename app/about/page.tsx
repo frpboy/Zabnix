@@ -22,10 +22,10 @@ export default function AboutPage() {
             <div className="max-w-3xl py-12">
               <span className="text-xs uppercase tracking-widest font-semibold text-cyan-400">About Zabnix</span>
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mt-4">
-                Pioneering Performance Architectures
+                Engineering Reliable Digital Systems
               </h1>
               <p className="text-zinc-400 mt-6 leading-relaxed text-base md:text-lg">
-                We are a specialized systems engineering and design studio. Backed by the Sahakar Group, we design high-performance digital platforms and enterprise systems for modern industries.
+                We are a specialized systems engineering and design studio. Backed by the Sahakar Group, we design high-reliability digital platforms, database migrations, and operational tools for cooperative and commercial networks.
               </p>
             </div>
           </Container>
@@ -38,26 +38,26 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <h2 className="text-2xl md:text-3xl font-bold text-white tracking-wide">Our Journey</h2>
                 <p className="text-zinc-400 text-sm leading-relaxed">
-                  Zabnix was established to address the growing latency and architectural inefficiencies in legacy enterprise systems. Partnering with the Sahakar Group, we brought together a team of high-caliber engineers and product designers with a mission to develop extremely fast, beautiful, and secure web applications.
+                  Zabnix was established to build reliable, maintainable software systems for cooperative credit unions, logistics companies, and healthcare providers. Partnering with the Sahakar Group, we consolidated a team of regional engineers and system architects with a mission to develop robust operational workflows and clean user interfaces.
                 </p>
                 <p className="text-zinc-400 text-sm leading-relaxed">
-                  Today, we deliver complex SaaS dashboards, resource management systems, and high-conversion web frontends for clients globally.
+                  Today, we deliver complex supply chain trackers, credit union ledger systems, and tailored ERP solutions that power daily business operations.
                 </p>
               </div>
 
               <div className="glass-panel p-8 rounded-xl border-cyan-500/10">
                 <h3 className="text-xs uppercase font-bold tracking-widest text-cyan-400 mb-6">Institutional Strength</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed mb-6">
-                  Backed by Sahakar Group's financial and regulatory framework, Zabnix has the stability and resources to manage large-scale migrations, carry out HIPAA/SOC2 compliance mapping, and deploy high-volume database engines safely.
+                  Backed by Sahakar Group's operational and compliance framework, Zabnix has the stability and resources to manage high-integrity ledger migrations, enforce strict security controls, and deploy high-volume database engines with complete reliability.
                 </p>
-                <div className="grid grid-cols-3 gap-4 border-t border-white/5 pt-6 font-mono">
+                <div className="grid grid-cols-3 gap-4 border-t border-white/5 pt-6 font-mono font-semibold">
                   <div>
                     <div className="text-xl font-bold text-white">2026</div>
                     <div className="text-[9px] text-zinc-500 uppercase tracking-wide">Inception</div>
                   </div>
                   <div>
                     <div className="text-xl font-bold text-white">100%</div>
-                    <div className="text-[9px] text-zinc-500 uppercase tracking-wide">Uptime Target</div>
+                    <div className="text-[9px] text-zinc-500 uppercase tracking-wide">Audit Success</div>
                   </div>
                   <div>
                     <div className="text-xl font-bold text-white">Sahakar</div>

@@ -30,7 +30,7 @@ const mockCareers: Record<string, CareerDetail> = {
     locationType: "Remote",
     location: "Bangalore, India",
     experienceLevel: "5+ years",
-    overview: "We are seeking a senior backend/systems engineer to build low-latency serverless routes, integrate database sharding models, and oversee microservices architectures.",
+    overview: "We are seeking a senior backend/systems engineer to build high-availability service endpoints, implement database sharding strategies, and manage core microservices architecture.",
     responsibilities: [
       "Design and maintain scalable distributed database schemas.",
       "Build high-speed API gateways and connection caching nodes.",
@@ -40,13 +40,13 @@ const mockCareers: Record<string, CareerDetail> = {
     requirements: [
       "Deep familiarity with Node.js, TypeScript, and Go",
       "Expertise in SQL architectures (PostgreSQL, ClickHouse)",
-      "Experience configuring AWS, Docker, and edge networks",
-      "Ability to build high-performance data interfaces",
+      "Experience configuring AWS, Docker, and CI/CD pipelines",
+      "Ability to build reliable, high-throughput database interfaces",
     ],
     benefits: [
-      "Competitive compensation package with equity options",
-      "Flexible working coordinates (100% Remote)",
-      "Advanced gear allowance (MacBook Pro, 4K Monitor)",
+      "Competitive salary with health benefits and performance bonuses",
+      "Flexible hybrid working options (Remote friendly)",
+      "Modern work setup and workspace allowance",
       "Comprehensive medical coverage plans",
     ],
     applicationEmail: "careers@zabnix.com",
@@ -58,7 +58,7 @@ const mockCareers: Record<string, CareerDetail> = {
     locationType: "Hybrid",
     location: "Bangalore, India",
     experienceLevel: "3+ years",
-    overview: "Join our design squad to craft futuristic web interfaces, standardizing corporate color maps, typography scales, and CSS micro-animations.",
+    overview: "Join our design squad to craft highly functional web interfaces, standardizing design systems, corporate colors, and dashboard layouts.",
     responsibilities: [
       "Build responsive design mockups, wireframes, and prototypes.",
       "Establish site-wide styling tokens for fonts, colors, and shadows.",
@@ -66,10 +66,10 @@ const mockCareers: Record<string, CareerDetail> = {
       "Engage with front-end engineers to verify layout consistency.",
     ],
     requirements: [
-      "Strong portfolio of modern minimalist web applications",
-      "Expertise in Figma, vector animations, and design token structures",
-      "Comfortable pairing layouts with Framer Motion or vanilla CSS",
-      "Obsessive eye for typography, alignment, and spacing rules",
+      "Strong portfolio of clean, responsive web applications",
+      "Expertise in Figma, modern design tools, and component specifications",
+      "Comfortable pairing designs with Framer Motion or clean CSS",
+      "Attention to detail in typography, spacing rules, and layout consistency",
     ],
     benefits: [
       "Creative freedom to design state-of-the-art web systems",
@@ -201,14 +201,14 @@ export default async function CareerPage({ params }: PageProps) {
 
                 <div className="border-t border-white/5 pt-6 space-y-4">
                   <p className="text-xs text-zinc-500 font-mono leading-relaxed">
-                    To apply, please transmit your specifications, curriculum, and sample source directories to the coordinator inbox.
+                    To apply, please send your resume, portfolio, and code samples to our careers team.
                   </p>
                   <Button
                     variant="glow"
                     href={`mailto:${career.applicationEmail}?subject=Application for ${career.title}`}
                     className="w-full py-3 text-xs uppercase tracking-wider"
                   >
-                    Transmit Application
+                    Apply for Position
                   </Button>
                 </div>
 

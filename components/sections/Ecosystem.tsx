@@ -9,18 +9,18 @@ export default function Ecosystem() {
   const pillars = [
     {
       icon: <Cpu className="w-6 h-6 text-cyan-400" />,
-      title: "Engineered Performance",
-      description: "Low-latency systems build on custom frameworks, utilizing modern tech stacks like Next.js 15, React 19, and optimized bundlers.",
+      title: "Proven Engineering",
+      description: "High-stability systems built with robust frameworks like Next.js, TypeScript, and clean API design—delivering reliable runtimes without experimental bloat.",
     },
     {
       icon: <Zap className="w-6 h-6 text-cyan-400" />,
-      title: "Enterprise Scaling",
-      description: "Bespoke SaaS platforms, custom dashboards, and workflow automation. Designed to scale seamlessly to handle massive enterprise loads.",
+      title: "Operational Scaling",
+      description: "Bespoke workflow tools, operations managers, and custom dashboard modules designed to integrate with existing database architectures and logistics pipelines.",
     },
     {
       icon: <ShieldCheck className="w-6 h-6 text-cyan-400" />,
-      title: "Institutional Backing",
-      description: "Strategically backed by the Sahakar Group, ensuring long-term execution stability, robust security adherence, and business viability.",
+      title: "Sahakar Group Backing",
+      description: "Strategic integration with the Sahakar Group's enterprise ecosystem, offering long-term execution viability, strict security compliance, and real-world deployment channels.",
     },
   ];
 
@@ -36,7 +36,7 @@ export default function Ecosystem() {
             The Zabnix Ecosystem
           </h2>
           <p className="text-zinc-400 mt-6 leading-relaxed">
-            We operate at the intersection of extreme speed, architectural security, and clean minimalist design to deliver products that redefine standards.
+            We operate at the intersection of robust software engineering, compliance, and practical design to deliver systems that run daily workflows and scale with your operations.
           </p>
         </div>
 

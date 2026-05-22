@@ -3,7 +3,44 @@ import Footer from "@/components/layout/Footer";
 import Container from "@/components/common/Container";
 import Section from "@/components/common/Section";
 import GlowWrapper from "@/components/common/GlowWrapper";
-import { Linkedin, Github, Cpu, Code2, Shield, Workflow, Terminal, Globe } from "lucide-react";
+import { Cpu, Code2, Shield, Workflow, Terminal, Globe } from "lucide-react";
+
+const GithubIcon = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+    <path d="M9 18c-4.51 2-5-2-7-2" />
+  </svg>
+);
+
+const LinkedinIcon = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
 
 export default function TeamPage() {
   const leadership = [
@@ -11,24 +48,24 @@ export default function TeamPage() {
       name: "Kannan Subbiah",
       role: "Managing Partner & Systems Architect",
       dept: "Engineering",
-      bio: "Former high-frequency trading infrastructure developer. Specializes in low-latency systems, distributed database architecture, and kernel level performance tuning.",
-      skills: ["Systems Architecture", "FPGA / Latency", "Vector Engines", "Go / Rust"],
+      bio: "Specializes in high-integrity database systems, distributed ledger architecture, and enterprise application scaling for cooperative networks.",
+      skills: ["Systems Architecture", "Database Sharding", "Ledger Synchronization", "Go / Rust / PostgreSQL"],
       socials: { linkedin: "https://linkedin.com", github: "https://github" },
     },
     {
       name: "Nandita Nair",
       role: "Lead Design Architect",
       dept: "Design",
-      bio: "Award-winning interaction designer with a decade of building high-performance design systems and premium data visualization dashboards for fintech and healthtech giants.",
-      skills: ["Design Systems", "UI/UX Strategy", "Framer Motion", "WebGL / SVG"],
+      bio: "UI/UX architect with a decade of building robust design systems, management dashboards, and intuitive workflow applications for logistics and healthcare platforms.",
+      skills: ["Design Systems", "UI/UX Strategy", "Data Visualization", "Tailwind / CSS"],
       socials: { linkedin: "https://linkedin.com", github: "https://github" },
     },
     {
       name: "Vikram Malhotra",
       role: "Chief Operations Officer",
       dept: "Operations",
-      bio: "Oversees enterprise delivery, regulatory compliance strategies, and partner integrations. Ensures HIPAA, SOC2, and ISO standards are integrated in our software lifecycle.",
-      skills: ["SecOps Compliance", "HIPAA / SOC2", "SLA Auditing", "Agile Operations"],
+      bio: "Oversees operations, partner integrations, and regulatory compliance. Ensures bank-grade security, data auditing, and SLA compliance standards are met across all deployments.",
+      skills: ["Operations Management", "Sovereign Compliance", "SLA Auditing", "Cooperative Systems"],
       socials: { linkedin: "https://linkedin.com" },
     },
   ];
@@ -37,37 +74,37 @@ export default function TeamPage() {
     {
       name: "Rohan Gupta",
       role: "Senior Backend Engineer",
-      specialty: "High-throughput APIs & microservices, Go, gRPC, and PostgreSQL.",
+      specialty: "High-throughput APIs, database optimization, Go, and PostgreSQL.",
       icon: <Terminal className="w-4 h-4 text-cyan-400" />,
     },
     {
       name: "Sarah Jenkins",
       role: "Frontend Engineer",
-      specialty: "Next.js rendering optimisations, component systems, and state engines.",
+      specialty: "React/Next.js dashboard engineering, reusable component systems, and state management.",
       icon: <Code2 className="w-4 h-4 text-cyan-400" />,
     },
     {
       name: "Arjun Mehta",
       role: "DevOps & Infrastructure Lead",
-      specialty: "Kubernetes orchestration, AWS architectures, CI/CD, and Terraform.",
+      specialty: "Docker containerization, cloud infrastructures, CI/CD pipelines, and Terraform.",
       icon: <Cpu className="w-4 h-4 text-cyan-400" />,
     },
     {
-      name: "David Chen",
-      role: "Security Analyst",
-      specialty: "Intrusive threat analysis, security audits, and penetration testing.",
+      name: "David Cherian",
+      role: "Security & Compliance Lead",
+      specialty: "Sovereign database compliance, internal security audits, and access control models.",
       icon: <Shield className="w-4 h-4 text-cyan-400" />,
     },
     {
       name: "Priya Patel",
       role: "QA Automation Engineer",
-      specialty: "E2E testing suites, Playwright execution grids, and regression test suites.",
+      specialty: "End-to-end integration testing, regression suites, and Playwright verification.",
       icon: <Workflow className="w-4 h-4 text-cyan-400" />,
     },
     {
-      name: "Emma Watson",
+      name: "Meera Nair",
       role: "Product Manager",
-      specialty: "Client requirements translation, roadmaps, and agile delivery alignment.",
+      specialty: "Requirements gathering, operations mapping, and agile delivery alignment.",
       icon: <Globe className="w-4 h-4 text-cyan-400" />,
     },
   ];
@@ -83,10 +120,10 @@ export default function TeamPage() {
             <div className="max-w-3xl py-12">
               <span className="text-xs uppercase tracking-widest font-semibold text-cyan-400">Team Zabnix</span>
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mt-4">
-                The Architects of Speed & Design
+                The Engineering & Operations Team
               </h1>
               <p className="text-zinc-400 mt-6 leading-relaxed text-base md:text-lg">
-                We are a lean, interdisciplinary collective of systems engineers, product designers, and security professionals dedicated to building state-of-the-art enterprise software.
+                We are a dedicated group of systems engineers, product designers, and compliance officers building robust, high-integrity operational software.
               </p>
             </div>
           </Container>
@@ -114,12 +151,12 @@ export default function TeamPage() {
                       <div className="flex space-x-2">
                         {member.socials.linkedin && (
                           <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-cyan-400 transition-colors">
-                            <Linkedin className="w-4 h-4" />
+                            <LinkedinIcon className="w-4 h-4" />
                           </a>
                         )}
                         {member.socials.github && (
                           <a href={member.socials.github} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-cyan-400 transition-colors">
-                            <Github className="w-4 h-4" />
+                            <GithubIcon className="w-4 h-4" />
                           </a>
                         )}
                       </div>

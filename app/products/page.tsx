@@ -10,45 +10,45 @@ export default function ProductsPage() {
   const products = [
     {
       title: "Zabnix Core",
-      type: "SaaS Platform",
+      type: "Operational Suite",
       status: "Production",
-      description: "Our core telemetry dashboard system designed to aggregate distributed logs, monitor API query times, and coordinate automated alerts across multi-tenant servers.",
+      description: "Our central integration engine providing unified authentication, secure workspace boundaries, and key branch database synching across multi-office cooperative networks.",
       features: [
-        "Sub-millisecond data stream ingest pipes",
-        "Configurable vector-rendered charting dashboard",
-        "Multi-channel instant alert notifications (Slack, Discord, SMS)",
-        "Token-authenticated API request paths",
+        "Multi-office database sync and replication",
+        "Role-based permission matrices for staff",
+        "Workflow automation and approval pipelines",
+        "Token-authenticated external API bridges",
       ],
       icon: <Zap className="w-6 h-6 text-cyan-400" />,
-      tagline: "High-Volume Telemetry Systems",
+      tagline: "Enterprise Integration Engine",
     },
     {
       title: "Kronos ERP",
-      type: "Enterprise Resource Planner",
-      status: "WIP",
-      description: "A secure operations planning architecture built to process heavy inventory tracking logs, vendor dispatch pipelines, and granular office authority permissions.",
+      type: "Supply & Logistics",
+      status: "Production",
+      description: "Bespoke operations resource planning architecture designed specifically for heavy cooperative logistics, supply chains, and warehousing inventories.",
       features: [
-        "Cryptographically locked transaction ledgers",
-        "Automated warehouse stocks reconciliation",
-        "Custom billing models and export filters",
-        "Optimized Prisma relational database schemas",
+        "Inventory ledgering and real-time stocks reconciliation",
+        "Automated vendor dispatch and routing logs",
+        "Audit-ready account ledger exports",
+        "Optimized database schemas for high transactional integrity",
       ],
       icon: <Layers className="w-6 h-6 text-cyan-400" />,
-      tagline: "Corporate Ledger & Operations",
+      tagline: "Cooperative Supply Chain ERP",
     },
     {
       title: "Helios Analytics",
-      type: "Edge Telemetry Compiler",
-      status: "Experimental",
-      description: "A performance-focused stream analytics package that parses incoming logs directly on Edge CDN routing points to provide near-instant geographical access metrics.",
+      type: "Business Intelligence",
+      status: "Internal",
+      description: "An operational monitoring panel that aggregates fleet telemetry, logistics performance, and branch cooperative metrics into clear, actionable visual dashboards.",
       features: [
-        "WebAssembly-compiled parsing pipeline cores",
-        "Zero-cold-start edge function triggers",
-        "Sleek coordinate visualization maps",
-        "Custom integration bindings for Next.js and NestJS",
+        "Real-time dispatch and fleet tracking telemetry",
+        "Interactive metrics and accounting charts",
+        "Automated email reports and data sheet exports",
+        "Custom data source connectors for legacy systems",
       ],
       icon: <Cpu className="w-6 h-6 text-cyan-400" />,
-      tagline: "Edge Performance Analytics",
+      tagline: "Operational Intelligence Panel",
     },
   ];
 
@@ -81,10 +81,10 @@ export default function ProductsPage() {
             <div className="max-w-3xl py-12">
               <span className="text-xs uppercase tracking-widest font-semibold text-cyan-400">Proprietary Stacks</span>
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mt-4">
-                In-House Systems & SaaS
+                Operational Suites & Frameworks
               </h1>
               <p className="text-zinc-400 mt-6 leading-relaxed text-base md:text-lg">
-                We design and incubate robust software products that address scaling bottlenecks, analytics delay, and secure ledger tracking.
+                We design and deploy proprietary software components, ERP systems, and business intelligence panels proven in high-load enterprise environments.
               </p>
             </div>
           </Container>
@@ -139,7 +139,7 @@ export default function ProductsPage() {
                     </div>
 
                     <Button variant="glow" href="/contact" className="w-full text-xs py-2.5 uppercase tracking-wider mt-8">
-                      Request Pilot Sandbox
+                      Inquire for Custom Integration
                     </Button>
                   </div>
                 </div>
@@ -155,7 +155,7 @@ export default function ProductsPage() {
               <span className="text-xs uppercase tracking-widest font-semibold text-cyan-400">Licensing & Setups</span>
               <h2 className="text-3xl font-bold text-white mt-2">Dedicated Deployments</h2>
               <p className="text-zinc-400 mt-4 leading-relaxed">
-                Zabnix systems can be operated on our multi-tenant SaaS grid or deployed privately inside your sovereign database zones.
+                Zabnix systems are built to run securely on private cloud networks or on-premise infrastructure under sovereign data boundaries.
               </p>
             </div>
 

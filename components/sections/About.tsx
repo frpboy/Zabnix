@@ -5,12 +5,12 @@ import Section from "@/components/common/Section";
 import Container from "@/components/common/Container";
 
 export default function About() {
-  const leadershipMessage = `"We formed Zabnix to bridge the gap between heavy enterprise legacy architecture and the speed of modern web technologies. Backed by Sahakar Group, we focus on raw performance, visual excellence, and software reliability."`;
+  const leadershipMessage = `"We formed Zabnix to build practical, scalable systems for businesses that need operational reliability over hype. Backed by the Sahakar Group's robust network, we focus on clean code, secure database ledgers, and daily operational stability."`;
 
   const values = [
-    { title: "Pure Precision", text: "We do not compromise. We code clean, test heavily, and optimize down to milliseconds." },
-    { title: "Long-term Security", text: "Supported by institutional structures, our builds enforce compliance, safety, and scale." },
-    { title: "Minimal Elegance", text: "Visual interfaces are designed to be premium, responsive, and functional, omitting any unnecessary clutter." },
+    { title: "Pure Stability", text: "We do not compromise. We build clean, test thoroughly, and optimize for long-term operational runtimes." },
+    { title: "Institutional Trust", text: "Supported by the Sahakar Group, our builds enforce strict compliance, regulatory safety, and structural scale." },
+    { title: "Practical Interfaces", text: "Visual interfaces are built to be responsive, clear, and highly functional, removing unnecessary layout clutter." },
   ];
 
   return (
@@ -29,7 +29,7 @@ export default function About() {
             </div>
             
             <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
-              Zabnix began as a specialized team building low-latency trading integrations and dashboards. Recognizing the broader market need for fast, high-security cloud platforms, we expanded into a comprehensive engineering studio.
+              Zabnix was established to build reliable, maintainable software systems for cooperative credit unions, logistics companies, and healthcare providers. Recognizing the broader market need for robust database workflows and secure cloud platforms, we expanded into a comprehensive engineering studio.
             </p>
 
             <blockquote className="border-l-2 border-cyan-400 pl-6 py-2">
